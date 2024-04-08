@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LandingView: View {
+    @State var searchText = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack {
+                List{
+                    ItemView(itemTodo: "walking")
+                    ItemView(itemTodo: "dog")
+                }
+                .searchable(text: $searchText)
+                
+            }
+        }
+        .navigationTitle("To do")
     }
 }
 
