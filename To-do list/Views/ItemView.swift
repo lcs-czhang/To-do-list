@@ -7,16 +7,19 @@
 
 import SwiftUI
 struct ItemView: View {
-    var ifDone: Bool
+    @State var ifDone: Bool = false
     var itemTodo: String
     var body: some View {
         HStack{
+            
             if ifDone == true{
                 Image(systemName: "checkmark.circle")
                     .foregroundStyle(.blue)
+                    .onTapGesture{ifDone = false}
             }else{
                 Image(systemName: "circle")
                     .foregroundStyle(.blue)
+                    .onTapGesture{ifDone = true}
             }
             Text(itemTodo)
         }
@@ -24,5 +27,5 @@ struct ItemView: View {
 }
 
 #Preview {
-    ItemView(ifDone: false, itemTodo: "walking dog")
+    ItemView(itemTodo: "walking dog")
 }
