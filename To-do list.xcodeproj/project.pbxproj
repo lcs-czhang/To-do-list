@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E1BE11D32BC44CE600153F72 /* To_do_listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE11D22BC44CE600153F72 /* To_do_listApp.swift */; };
-		E1BE11D52BC44CE600153F72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE11D42BC44CE600153F72 /* ContentView.swift */; };
 		E1BE11D72BC44CE900153F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BE11D62BC44CE900153F72 /* Assets.xcassets */; };
 		E1BE11DA2BC44CE900153F72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BE11D92BC44CE900153F72 /* Preview Assets.xcassets */; };
 		E1BE11E42BC44E5D00153F72 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE11E32BC44E5D00153F72 /* TodoItem.swift */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		E1BE11CF2BC44CE600153F72 /* To-do list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-do list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BE11D22BC44CE600153F72 /* To_do_listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_do_listApp.swift; sourceTree = "<group>"; };
-		E1BE11D42BC44CE600153F72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1BE11D62BC44CE900153F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1BE11D92BC44CE900153F72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1BE11E32BC44E5D00153F72 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				E1BE11D22BC44CE600153F72 /* To_do_listApp.swift */,
-				E1BE11D42BC44CE600153F72 /* ContentView.swift */,
 				E1BE11E02BC44DC600153F72 /* Helpers */,
 				E1BE11E12BC44DD800153F72 /* Model */,
 				E1BE11E22BC44E1000153F72 /* Views */,
@@ -171,7 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BE11E62BC44E7900153F72 /* LandingView.swift in Sources */,
-				E1BE11D52BC44CE600153F72 /* ContentView.swift in Sources */,
 				E1BE11E42BC44E5D00153F72 /* TodoItem.swift in Sources */,
 				E1BE11E82BC44E8A00153F72 /* ItemView.swift in Sources */,
 				E1BE11D32BC44CE600153F72 /* To_do_listApp.swift in Sources */,

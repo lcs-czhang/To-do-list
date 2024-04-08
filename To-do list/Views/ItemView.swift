@@ -6,13 +6,23 @@
 //
 
 import SwiftUI
-
 struct ItemView: View {
+    var ifDone: Bool
+    var itemTodo: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            if ifDone == true{
+                Image(systemName: "checkmark.circle")
+                    .foregroundStyle(.blue)
+            }else{
+                Image(systemName: "circle")
+                    .foregroundStyle(.blue)
+            }
+            Text(itemTodo)
+        }
     }
 }
 
 #Preview {
-    ItemView()
+    ItemView(ifDone: false, itemTodo: "walking dog")
 }
