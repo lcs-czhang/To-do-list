@@ -14,8 +14,8 @@ struct LandingView: View {
         NavigationView{
             VStack {
                 List{
-                    ItemView(itemTodo: "walking")
-                    ItemView(itemTodo: "dog")
+                    ItemView(currentItem: firstItem)
+                    ItemView(currentItem: secondItem)
                 }
                 .searchable(text: $searchText)
                 HStack {
