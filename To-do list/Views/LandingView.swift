@@ -21,14 +21,19 @@ struct LandingView: View {
                 HStack {
                     TextField("Enter a to-do item", text: $newItemDescription)
                     Button("ADD") {
-                        // Add the new to-do item.
+                        createTodo(withTitle: newItemDescription)
                     }
                     .font(.caption)
+                    .disabled(newItemDescription.isEmpty == true)
                 }
                 .padding (20)
             }
         }
         .navigationTitle("To do")
+    }
+    func createTodo(withTitle title: String){
+        let todo = TodoItem(title: title, done: false)
+        todos.append(todo)
     }
 }
 
