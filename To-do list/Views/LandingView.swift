@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LandingView: View {
     @State var searchText = ""
+    @State var newItemDescription = ""
     var body: some View {
         NavigationView{
             VStack {
@@ -17,7 +18,14 @@ struct LandingView: View {
                     ItemView(itemTodo: "dog")
                 }
                 .searchable(text: $searchText)
-                
+                HStack {
+                    TextField("Enter a to-do item", text: $newItemDescription)
+                    Button("ADD") {
+                        // Add the new to-do item.
+                    }
+                    .font(.caption)
+                }
+                .padding (20)
             }
         }
         .navigationTitle("To do")
