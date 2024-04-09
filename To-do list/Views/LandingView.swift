@@ -10,12 +10,12 @@ import SwiftUI
 struct LandingView: View {
     @State var searchText = ""
     @State var newItemDescription = ""
+    @State var todos: [TodoItem] = exampleItems
     var body: some View {
         NavigationView{
             VStack {
-                List{
-                    ItemView(currentItem: firstItem)
-                    ItemView(currentItem: secondItem)
+                List(todos){ todo in
+                    ItemView(currentItem: todo)
                 }
                 .searchable(text: $searchText)
                 HStack {
