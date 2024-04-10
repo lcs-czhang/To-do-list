@@ -15,14 +15,11 @@ struct LandingView: View {
         NavigationView{
             VStack {
                 List($todos){ $todo in
-                    ItemView(currentItem: todo)
-                        .swipeActions(allowsFullSwipe: true){
+                    ItemView(currentItem: $todo)
+                        .swipeActions{
                             Button("Delete", role: .destructive, action:{
                                 deleteTodo(todo)
                             })
-                        }
-                        .onTapGesture {
-                            todo.done.toggle()
                         }
                 }
                 .searchable(text: $searchText)
