@@ -7,7 +7,7 @@
  
 import SwiftUI
 struct ItemView: View {
-    @Binding var currentItem: TodoItem
+    @Bindable var currentItem: TodoItem
     var body: some View {
         Label(
             title: {
@@ -26,4 +26,4 @@ struct ItemView: View {
         ItemView(currentItem: Binding.constant(firstItem))
         ItemView(currentItem: Binding.constant(secondItem))
     }
-}
+}*/
