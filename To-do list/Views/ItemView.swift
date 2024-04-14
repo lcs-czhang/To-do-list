@@ -21,7 +21,7 @@ struct ItemView: View {
         )
     }
 }
-#Preview {
+/*#Preview {
     List{
         ItemView(currentItem: Binding.constant(firstItem))
         ItemView(currentItem: Binding.constant(secondItem))

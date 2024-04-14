@@ -47,6 +47,6 @@ struct LandingView: View {
     }
 }
 
-#Preview {
+/*#Preview {
     LandingView()
-}
+}*/
