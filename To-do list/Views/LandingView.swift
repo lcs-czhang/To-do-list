@@ -11,7 +11,7 @@ import SwiftUI
 struct LandingView: View {
     @State var searchText = ""
     @State var newItemDescription = ""
-    @Environment(\.modelContext) var modelcontext
+    @Environment(\.modelContext) var modelContext
     @Query var todos: [TodoItem]
     var body: some View {
         NavigationView{
