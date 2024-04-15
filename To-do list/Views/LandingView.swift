@@ -33,8 +33,11 @@ struct LandingView: View {
                 }
                 .padding (20)
             }
+            .navigationTitle("To do")
+            .onAppear{
+                printCommandToOpenDatabaseFile()
+            }
         }
-        .navigationTitle("To do")
     }
     func createTodo(withTitle title: String){
         let todo = TodoItem(title: title, done: false)
